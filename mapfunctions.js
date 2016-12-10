@@ -32,6 +32,12 @@ function initMap() {
 				map: null
 			});
 		}
+		
+		var htmlAdding = 
+			"<div class=\"checkable\" onchange=\"toggleLayer(" + index + ")\">" \
+			"<input type=\"checkbox\" id=\"checkbox"+index+"\" />" \
+			"<label for=\"checkbox"+index+"\">"+el.Title+"</label>"\
+			"</div>";
 	});
 	
 	// layers[0] = new google.maps.KmlLayer(srcOriginal, {
