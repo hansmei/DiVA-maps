@@ -1,132 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Document xmlns="http://www.opengis.net/kml/2.2">
   <Style id="Vannledning">
-    <IconStyle>
-      <Icon />
-    </IconStyle>
-    <LabelStyle>
-      <color>ffff0000</color>
-    </LabelStyle>
     <LineStyle>
       <color>ffff0000</color>
       <width>3</width>
     </LineStyle>
   </Style>
   <Style id="Vannledning_pumpeledning">
-    <IconStyle>
-      <Icon />
-    </IconStyle>
-    <LabelStyle>
-      <color>ffff0000</color>
-    </LabelStyle>
     <LineStyle>
       <color>ffff0000</color>
       <width>3</width>
     </LineStyle>
   </Style>
   <Style id="Spillvannsledning">
-    <IconStyle>
-      <Icon />
-    </IconStyle>
-    <LabelStyle>
-      <color>ff00ff00</color>
-    </LabelStyle>
     <LineStyle>
       <color>ff00ff00</color>
       <width>3</width>
     </LineStyle>
   </Style>
   <Style id="Spillvannsledning_pumpeledning">
-    <IconStyle>
-      <Icon />
-    </IconStyle>
-    <LabelStyle>
-      <color>ff00ff00</color>
-    </LabelStyle>
     <LineStyle>
       <color>ff00ff00</color>
       <width>3</width>
     </LineStyle>
   </Style>
   <Style id="Overvannsledning">
-    <IconStyle>
-      <Icon />
-    </IconStyle>
-    <LabelStyle>
-      <color>ff000000</color>
-    </LabelStyle>
     <LineStyle>
       <color>ff000000</color>
       <width>3</width>
     </LineStyle>
   </Style>
   <Style id="Overvannsledning_pumpeledning">
-    <IconStyle>
-      <Icon />
-    </IconStyle>
-    <LabelStyle>
-      <color>ff000000</color>
-    </LabelStyle>
     <LineStyle>
       <color>ff000000</color>
       <width>3</width>
     </LineStyle>
   </Style>
   <Style id="Drensledning">
-    <IconStyle>
-      <Icon />
-    </IconStyle>
-    <LabelStyle>
-      <color>ff0066cc</color>
-    </LabelStyle>
     <LineStyle>
       <color>ff0066cc</color>
       <width>3</width>
     </LineStyle>
   </Style>
   <Style id="Drensledning_pumpeledning">
-    <IconStyle>
-      <Icon />
-    </IconStyle>
-    <LabelStyle>
-      <color>ff0066cc</color>
-    </LabelStyle>
     <LineStyle>
       <color>ff0066cc</color>
       <width>3</width>
     </LineStyle>
   </Style>
   <Style id="AvløpFelles">
-    <IconStyle>
-      <Icon />
-    </IconStyle>
-    <LabelStyle>
-      <color>ff0000ff</color>
-    </LabelStyle>
     <LineStyle>
       <color>ff0000ff</color>
       <width>3</width>
     </LineStyle>
   </Style>
   <Style id="AvløpFelles_pumpeledning">
-    <IconStyle>
-      <Icon />
-    </IconStyle>
-    <LabelStyle>
-      <color>ff0000ff</color>
-    </LabelStyle>
     <LineStyle>
       <color>ff0000ff</color>
       <width>3</width>
     </LineStyle>
   </Style>
   <Style id="Annet">
-    <IconStyle>
-      <Icon />
-    </IconStyle>
-    <LabelStyle>
-      <color>ffff00ff</color>
-    </LabelStyle>
     <LineStyle>
       <color>ffff00ff</color>
       <width>3</width>
@@ -17540,6 +17474,42 @@
       <LineString>
         <altitudeMode>relativeToGround</altitudeMode>
         <coordinates>11.069467036779312,60.433295879259376,1
+11.069810099825965,60.43336393003672,1</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>3408</name>
+      <visibility>true</visibility>
+      <description>VL180 PE lagt år 2013</description>
+      <styleUrl>#Vannledning</styleUrl>
+      <LineString>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates>11.069013859765898,60.432570552239028,1
+11.069007604495646,60.432560769543798,1
+11.069014280997617,60.432525727133658,1
+11.068930702586989,60.432457327332756,1
+11.06836519091673,60.432291504822174,1
+11.068108718706306,60.432201807675519,1
+11.068067966009064,60.431998017417854,1
+11.068143394382167,60.431835266145967,1</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>3431</name>
+      <visibility>true</visibility>
+      <description>VL32 PEL lagt år 2014</description>
+      <styleUrl>#Vannledning</styleUrl>
+      <LineString>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates>11.041113512349206,60.390806633652801,1
+11.041037040509268,60.390814273069175,1
+11.040948922813239,60.390815624226057,1
+11.040581371938277,60.390846857138811,1
+11.039778973333098,60.39136239718119,1</coordinates>
+      </LineString>
+    </Placemark>
+  </Folder>
+</Document>59376,1
 11.069810099825965,60.43336393003672,1</coordinates>
       </LineString>
     </Placemark>
