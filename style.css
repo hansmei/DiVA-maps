@@ -16,13 +16,25 @@ html, body {
 	height: 100%;
 }
 .navmenu-fixed-left{
-	width: 50%;
+	width: 70%;
 }
 
 .checkable{
 	padding: 8px 15px ;
 	border-top: 1px solid #ababab;
 	border-bottom: 1px solid transparent;
+}
+
+.checkable:hover + span{
+	display: block;
+	width: 100%;
+	padding: 5px;
+	padding-bottom: 25px;
+	color: #999;
+}
+
+.checkable + span{
+	display: none;
 }
 
 /* Base for label styling */

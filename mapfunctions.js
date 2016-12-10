@@ -33,11 +33,15 @@ function initMap() {
 			});
 		}
 		
+		var menuitem = document.createElement('li');
+		var checked = el.Visible == 1 ? " checked=\"checked\"" : "";
 		var htmlAdding = 
-			"<div class=\"checkable\" onchange=\"toggleLayer(" + index + ")\">" \
-			"<input type=\"checkbox\" id=\"checkbox"+index+"\" />" \
-			"<label for=\"checkbox"+index+"\">"+el.Title+"</label>"\
-			"</div>";
+			"<div class=\"checkable\" onchange=\"toggleLayer(" + index + ")\">" +
+			"<input type=\"checkbox\" id=\"checkbox" + index + "\" " + checked + "/>" +
+			"<label for=\"checkbox" + index + "\">" + el.Title + "</label>" +
+			"</div><span>" + el.Description + "</span>";
+		menuitem.innerHTML = htmlAdding;
+		document.getElementById("leftmenu").appendChild(menuitem);
 	});
 	
 	// layers[0] = new google.maps.KmlLayer(srcOriginal, {
