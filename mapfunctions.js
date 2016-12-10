@@ -1,5 +1,6 @@
 var map;
 var layers = [];
+var kmlFiles = [];
 
 var baseUrl = "https://raw.githubusercontent.com/hansmei/DiVA-maps/master/";
 var municipality = "Hurdal";
@@ -17,16 +18,30 @@ function initMap() {
 		mapTypeId: 'terrain'
 	});
 	
-	
-	
-	layers[0] = new google.maps.KmlLayer(srcOriginal, {
-		preserveViewport: true,
-		map: map
+	kmlFiles.forEach(function(el, index){
+		var source = baseUrl + municipality + "/" + el.File;
+		
+		if(el.Visible == 1){
+			layers[index] = new google.maps.KmlLayer(source, {
+				preserveViewport: true,
+				map: map
+			});
+		} else{
+			layers[index] = new google.maps.KmlLayer(source, {
+				preserveViewport: true,
+				map: null
+			});
+		}
 	});
-	layers[1] = new google.maps.KmlLayer(srcSanitation, {
-		preserveViewport: true,
-		map: null
-	});
+	
+	// layers[0] = new google.maps.KmlLayer(srcOriginal, {
+		// preserveViewport: true,
+		// map: map
+	// });
+	// layers[1] = new google.maps.KmlLayer(srcSanitation, {
+		// preserveViewport: true,
+		// map: null
+	// });
 	
 	google.maps.event.addListenerOnce(map, 'idle', function () {
 		// map is ready
@@ -48,32 +63,31 @@ function toggleLayer(i) {
 	}
 }
 
-$(document).ready(function() {
+function loadMapData(){
     $.ajax({
         type: "GET",
         url: baseUrl + municipality + "/index.csv",
         dataType: "text",
         success: function(data) {processData(data);}
      });
-});
+}
 
 function processData(allText) {
     var allTextLines = allText.split(/\r\n|\n/);
     var headers = allTextLines[0].split(',');
-    var lines = [];
 
     for (var i=1; i<allTextLines.length; i++) {
         var data = allTextLines[i].split(',');
         if (data.length == headers.length) {
 
-            var tarr = [];
+            var tarr = {};
             for (var j=0; j<headers.length; j++) {
-                tarr.push(headers[j]+":"+data[j]);
+                tarr[headers[j]] = data[j];
             }
-            lines.push(tarr);
+            kmlFiles.push(tarr);
         }
     }
-    console.log(lines);
+	initMap();
 }
 
 // function loadMap(kmlFileName){
