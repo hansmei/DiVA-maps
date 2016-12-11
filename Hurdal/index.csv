@@ -1,12 +1,12 @@
-File,Visible,Title,Description
-VA-kart.kml,1,Oversiktskart,Eksisterende VA-nett i Hurdal
-Saneringsbehov-alle-ledninger.kml,0,Saneringsbehov,Saneringsbehov i henhold til Norsk vann rapport 196
-Avløp-alder.kml,0,Alder avløp,
-Overvann-alder.kml,0,Alder overvann,
-Vann-alder.kml,0,Alder vann,
-Avløp-høyder.kml,0,Høyder avløp,
-Overvann-høyder.kml,0,Høyder overvann,
-Vann-høyder.kml,0,Høyder vann,
-Avløp-materialer.kml,0,Materialer avløp,
-Overvann-materialer.kml,0,Materialer overvann,
-Vann-materialer.kml,0,Materialer vann,
+File,Group,Visible,Title,Description
+VA-kart.kml,Oversikter,1,Oversiktskart,Eksisterende VA-nett i Hurdal
+Saneringsbehov-alle-ledninger.kml,Oversikter,0,Saneringsbehov,Saneringsbehov i henhold til Norsk vann rapport 196
+Avløp-alder.kml,Aldersanalyser,0,Alder avløp,
+Overvann-alder.kml,Aldersanalyser,0,Alder overvann,
+Vann-alder.kml,Aldersanalyser,0,Alder vann,
+Avløp-høyder.kml,Høydeanalyser,0,Høyder avløp,
+Overvann-høyder.kml,Høydeanalyser,0,Høyder overvann,
+Vann-høyder.kml,Høydeanalyser,0,Høyder vann,
+Avløp-materialer.kml,Materialanalyser,0,Materialer avløp,
+Overvann-materialer.kml,Materialanalyser,0,Materialer overvann,
+Vann-materialer.kml,Materialanalyser,0,Materialer vann,
