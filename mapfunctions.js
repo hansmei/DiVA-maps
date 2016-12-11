@@ -20,7 +20,7 @@ function initMap() {
 	
 	kmlFiles.forEach(function(el, index){
 		var source = baseUrl + municipality + "/" + el.File;
-		
+		console.log(el);
 		if(el.Visible == 1){
 			layers[index] = new google.maps.KmlLayer(source, {
 				preserveViewport: true,
@@ -65,6 +65,7 @@ function initMap() {
 }
 
 function toggleLayer(i) {
+	console.log(layers);
 	if(layers[i].getMap() === null) {
 		layers[i].setMap(map);
 	}
