@@ -37,6 +37,11 @@ html, body {
 	display: none;
 }
 
+.separator{
+	padding: 5px;
+	text-align: right;
+}
+
 /* Base for label styling */
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {

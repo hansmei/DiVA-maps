@@ -18,9 +18,11 @@ function initMap() {
 		mapTypeId: 'terrain'
 	});
 	
+	var previousGroup = "";
 	kmlFiles.forEach(function(el, index){
 		var source = baseUrl + municipality + "/" + el.File;
-		console.log(source);
+		
+		console.log(el.Group);
 		if(el.Visible == 1){
 			layers[index] = new google.maps.KmlLayer(source, {
 				preserveViewport: true,
@@ -33,13 +35,30 @@ function initMap() {
 			});
 		}
 		
+		if(previousGroup != el.Group){
+			// Add a new group separator
+			var separator = document.createElement('li');
+			var htmlContent = 
+				"<div class=\"separator\"\">" +
+				el.Group +
+				"</div>";
+			separator.innerHTML = htmlContent;
+			document.getElementById("leftmenu").appendChild(separator);
+			
+			previousGroup = el.Group;
+		}
+		
 		var menuitem = document.createElement('li');
 		var checked = el.Visible == 1 ? " checked=\"checked\"" : "";
 		var htmlAdding = 
 			"<div class=\"checkable\" onchange=\"toggleLayer(" + index + ")\">" +
 			"<input type=\"checkbox\" id=\"checkbox" + index + "\" " + checked + "/>" +
 			"<label for=\"checkbox" + index + "\">" + el.Title + "</label>" +
-			"</div><span>" + el.Description + "</span>";
+			"</div>";
+		if(el.Description != ""){
+			htmlAdding += "<span>" + el.Description + "</span>";
+		}
+			
 		menuitem.innerHTML = htmlAdding;
 		document.getElementById("leftmenu").appendChild(menuitem);
 	});
@@ -65,7 +84,6 @@ function initMap() {
 }
 
 function toggleLayer(i) {
-	console.log(layers);
 	if(layers[i].getMap() === null) {
 		layers[i].setMap(map);
 	}
