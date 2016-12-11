@@ -5,8 +5,8 @@ var kmlFiles = [];
 var baseUrl = "https://raw.githubusercontent.com/hansmei/DiVA-maps/master/";
 var municipality = "Hurdal";
 var indexFile = "index.csv";
-var srcOriginal = baseUrl + municipality + "/VA-kart.kml";
-var srcSanitation = baseUrl + municipality + "/Saneringsbehov.kml";
+// var srcOriginal = baseUrl + municipality + "/VA-kart.kml";
+// var srcSanitation = baseUrl + municipality + "/Saneringsbehov.kml";
 
 /**
  * Initializes the map and calls the function that loads the KML layer.
@@ -20,7 +20,7 @@ function initMap() {
 	
 	kmlFiles.forEach(function(el, index){
 		var source = baseUrl + municipality + "/" + el.File;
-		console.log(el);
+		console.log(source);
 		if(el.Visible == 1){
 			layers[index] = new google.maps.KmlLayer(source, {
 				preserveViewport: true,
