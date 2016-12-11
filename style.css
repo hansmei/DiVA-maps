@@ -40,6 +40,7 @@ html, body {
 .separator{
 	padding: 5px;
 	text-align: right;
+	font-size: 12px;
 }
 
 /* Base for label styling */
