@@ -72,6 +72,8 @@ function initMap() {
 		// map: null
 	// });
 	
+	console.log("HER");
+	
 	google.maps.event.addListenerOnce(map, 'idle', function () {
 		// map is ready
 		var bounds = layers[0].getDefaultViewport();

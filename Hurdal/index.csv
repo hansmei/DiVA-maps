@@ -6,7 +6,7 @@ Overvann-alder.kml,Aldersanalyser,0,Alder overvann,
 Vann-alder.kml,Aldersanalyser,0,Alder vann,
 Avløp-høyder.kml,Høydeanalyser,0,Høyder avløp,
 Overvann-høyder.kml,Høydeanalyser,0,Høyder overvann,
-Vann-høyder.kml,Høydeanalyser,0,Høyder vann,
-Avløp-materialer.kml,Materialanalyser,0,Materialer avløp,
-Overvann-materialer.kml,Materialanalyser,0,Materialer overvann,
+Vann-høyder.kml,Høydeanalyser,0,Høyder vann,Hvorvidt vannledninger har høyder
+Avløp-materialer.kml,Materialanalyser,0,Materialer avløp,Hvorvidt avløpsledninger har høyder
+Overvann-materialer.kml,Materialanalyser,0,Materialer overvann,Hvorvidt overvannsledninger har høyder
 Vann-materialer.kml,Materialanalyser,0,Materialer vann,
